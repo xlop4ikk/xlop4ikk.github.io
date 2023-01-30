@@ -1,0 +1,169 @@
+body {
+    background: rgb(17, 17, 17);
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.drop {
+    position: absolute;
+    bottom: 100%;
+    margin-left: 7px;
+    animation: drop 1.2s linear infinite;
+}
+
+.stem {
+    width: 1px;
+    height: 50px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0.5));
+    animation: stem 1.2s linear infinite;
+}
+
+.splash {
+    position: absolute;
+    bottom: 40%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border-top : 1px dotted rgba(255,255,255,0.5);
+    animation: splash 1.2s linear infinite;
+}
+
+@keyframes drop {
+    0% {
+        transform: translateY(0vh);
+    }
+    75% {
+        transform: translateY(100vh);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
+
+@keyframes stem {
+    0% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes splash {
+    0% {
+        opacity: 1;
+        transform: scale(0);    
+    }
+    60% {
+        opacity: 1;
+        transform: scale(0);  
+    }
+    70% {
+        opacity: 1;
+        transform: scale(1);  
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1.5);  
+    }
+}
+
+.change-lang {
+    color: #867a4e;
+    max-width: 200px;
+    max-height: auto;
+    background:transparent;
+    display: block; 
+    font-size: 16px; 
+    font-family: sans-serif; 
+    font-weight: 700; 
+    line-height: 1.3;
+    box-sizing: border-box; 
+    margin: 1%; 
+    font-family: thewitcher;
+}
+
+.divSelect {
+    width: 500;
+    height: 200;
+}
+
+.WitcherLogo {
+    text-align: center;
+}
+
+.WitcherLogoPNG {
+    max-width: 25%;
+    height: auto;
+}
+
+.btn-group {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.buttonBestiary {
+    width: 200px;
+    height: 350px;
+    margin: 3%;
+    background-color: transparent;
+    color: #867a4e;
+    border-color: #867a4e;
+    font-family: thewitcher;
+    font-size: 25px;
+}
+
+.buttonMaps {
+    width: 200px;
+    height: 350px;
+    margin: 3%;
+    background-color: transparent;
+    color: #867a4e;
+    border-color: #867a4e;
+    font-family: thewitcher;
+    font-size: 25px;
+}
+
+.buttonAlchemy {
+    width: 200px;
+    height: 350px;
+    margin: 3%;
+    background-color: transparent;
+    color: #867a4e;
+    border-color: #867a4e;
+    font-family: thewitcher;
+    font-size: 25px;
+}
+
+.buttonBestiary:hover {
+    background-color: #867a4e;
+    color: rgb(17, 17, 17);
+    border-color: #867a4e;
+}
+
+.buttonMaps:hover {
+    background-color: #867a4e;
+    color: rgb(17, 17, 17);
+    border-color: #867a4e;
+}
+
+.buttonAlchemy:hover {
+    background-color: #867a4e;
+    color: rgb(17, 17, 17);
+    border-color: #867a4e;
+}
+
+@font-face { 
+    font-family: "thewitcher"; 
+    src: url("fonts/Thewitcher-jnOj.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
